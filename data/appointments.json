@@ -1,0 +1,25 @@
+[{
+	"id":1,
+	"title": "Requirements Gathering",
+	"description": "Initial requirements gathering",
+	"name": "John and team",
+	"startTime": "7/22/2013 10:00 AM",
+	"endTime": "7/22/2013 11:30 AM"
+},
+{
+	"id":2,
+	"title": "Internal requirements review",
+	"description": "Review of requirements gathered in previous meeting",
+	"name": "My team",
+	"startTime": "7/22/2013 12:30 PM",
+	"endTime": "7/22/2013 2:00 PM"
+},
+{
+	"id":3,
+	"title": "Technology evaluation",
+	"description": "Evaluation of different available technologies",
+	"name": "My team",
+	"startTime": "7/22/2013 3:30 PM",
+	"endTime": "7/22/2013 5:00 PM"
+}
+]

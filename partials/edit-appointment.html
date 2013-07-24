@@ -1,0 +1,44 @@
+<header>
+	<h2 class="center">
+		Meet Me: {{appointment.title}}
+		</h1>
+</header>
+<form class="input-form" name="editAppointmentForm">
+	<ul class="appt-detail-list">
+		<li class>
+			Appointment Id: {{appointment.id}}
+		</li>
+		
+		<li>Title<br /> <input type="text" ng-model="appointment.title"
+			placeholder="Title" class="input-box" required>
+		</li>
+		
+		<li>Name<br /> <input type="text" ng-model="appointment.name"
+			placeholder="With?" class="input-box" required>
+		</li>
+		
+		<li>Start time<br /> <input type="text"
+			ng-model="appointment.startTime" placeholder="Start time"
+			class="input-box" required>
+		</li>
+		
+		<li>End time<br /> 
+			<input type="text"
+			ng-model="appointment.endTime" placeholder="End time"
+			class="input-box" required>
+		</li>
+		
+		<li>Description<br /> 
+			<textarea ng-model="appointment.description" placeholder="Description" class="input-area" required></textarea>
+		</li>
+
+		<li>
+			<button ng-click="cancelEditAppointment()" class="cancel-button">Cancel</button>
+
+			<button class="submit-button"
+				ng-disabled="editAppointmentForm.$invalid || isAppointmentUnchanged(appointment)"
+				ng-click="editAppointment()">Edit Appointment</button>
+		</li>
+
+	</ul>
+</form>

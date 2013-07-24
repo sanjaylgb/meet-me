@@ -1,0 +1,26 @@
+<header>
+	<h2 class="center">Meet Me: Appointments</h1>
+</header>
+
+<a href="#/addNew" class="add-new-link-style add-new-sprite" title="Add a new appointment"></a>
+
+<input type="text" placeholder="Filter" ng-model="query" class="filterbox">
+
+Sort by:
+<select class="transparent-select" ng-model="orderProperty" class="subheader selectbox">
+	<option value="title">Title</option>
+	<option value="startTime">Start Time</option>
+</select>
+
+<ul class="appt-list">
+	<li ng-repeat="appointment in appointments | filter:query | orderBy:orderProperty" class="appt-list-element">
+		{{appointment.title}} at 
+		<i>
+			{{appointment.startTime}}
+		</i>
+		<br/>
+		
+		<a title="Delete Appointment" class="appt-list-link-style delete-sprite" ng-click='deleteAppointment(appointment)'></a>
+		<a href="#/edit/{{appointment.id}}" title="Edit appointment" class="appt-list-link-style edit-sprite" ></a>	
+	</li>
+</ul>

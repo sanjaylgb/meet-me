@@ -1,0 +1,154 @@
+/*Ids*/
+#container{
+	width: 100%;
+	font-family: Arial;	
+}
+
+/*Elements*/
+header{
+	text-align:center;
+	background-image: url('../images/header_bg.jpg');
+	color:white;
+}
+
+body{
+	background: url('../images/body_bg.png');
+	background-repeat: repeat-x repeat-y;
+	margin:0;
+	padding:0;
+	font-size:12px;
+	overflow:scroll;
+}
+
+
+/*Classes*/
+
+	/*Appointment list*/
+.filterbox{
+	width:40%;
+	height:25px;
+	padding:0;
+	margin:0;
+}
+.transparent-select{
+	background:transparent;
+	width:30%;
+	font-size:10px;
+	height:30px;	
+}
+.add-new-sprite{
+	width:24px;
+	height:25px;
+	background:url('../images/spot_d_sprite.jpg');
+	background-position: -13px -80px;
+}
+.add-new-link-style{
+	display:block;
+	float:left;
+	height:25px;
+	width:24px;
+}
+.edit-sprite{
+	width:26px;
+	height:28px;
+	background:url('../images/spot_d_sprite.jpg');
+	background-position: -24px 33px;
+		
+	}
+.delete-sprite{
+	width:26px;
+	height:28px;
+	background:url('../images/spot_d_sprite.jpg');
+	background-position:0px 33px
+}
+	
+.appt-list{
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+}
+.appt-detail-list{
+	list-style-type: none;
+  	padding: 0px;
+	margin: 0px;
+}
+.appt-list-element{
+	vertical-align: middle;
+	color:white;
+	font-size:12px;
+	font-weight: bold;
+	margin:5px;
+	padding:5px;
+	border-radius:15px;
+}
+.appt-list-link-style{
+ 	display:inline-block;
+}
+
+.appt-list-element:nth-child(odd){
+ 	background-color:#848484 ;
+}
+
+.appt-list-element:nth-child(even){
+ 	background-color:#A4A4A4 ;
+}
+
+	/*Edit and new Appointment Views*/
+.input-box{
+	height:20px;
+	border-radius:10px;
+	width:70%;
+	margin:3px;
+	padding:3px;
+}
+
+.input-area{
+	width:70%;
+	border-radius:5px;
+	margin:3px;
+	padding:3px;
+}
+
+.submit-button{
+	border:1px solid white;
+	color:white;
+	border-radius: 10px;
+	box-shadow: 0 0 4px rgba(0,0,0, .75);
+	font-family:arial;
+	font-size:10px;
+	padding: 10px;
+	margin: 10px;
+	font-weight: bold;
+}
+.submit-button:enabled{
+	background-color:#045FB4;
+}
+.cancel-button{
+ 	background:grey;
+ 	border:1px solid white;
+ 	color:white;
+ 	border-radius: 10px;
+ 	box-shadow: 0 0 4px rgba(0,0,0, .75);
+ 	font-family:arial;
+ 	font-size:10px;
+ 	padding: 10px;
+ 	margin: 10px;
+ 	font-weight: bold;
+}
+
+
+.input-form input.ng-invalid.ng-dirty{
+	background-color: #F78181
+}
+ 
+.input-form input.ng-valid.ng-dirty {
+    background-color: #01DF74;
+}
+
+.input-form textarea.ng-invalid.ng-dirty{
+	background-color: #F78181
+}
+ 
+.input-form textarea.ng-valid.ng-dirty {
+    background-color: #01DF74;
+}
